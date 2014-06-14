@@ -12,8 +12,7 @@ class test_validation(unittest.TestCase):
 		l = ['999 999 9468','999-999-9484', ' 999 999 9514 ', '9999999565']
 		for i in l:
 			try:
-				response, checksum = validate(i)
-				self.assertNotEquals(10, checksum)
+				response = validate(i)
 				self.assertTrue(response)
 			except ValueError:
 				self.fail('None of these tests should fail.')
