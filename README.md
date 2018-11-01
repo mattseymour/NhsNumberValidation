@@ -20,7 +20,7 @@ Once imported the validate method can recieve nhs numbers in the format.
  - or, with a combination of spaces or hypens. (xxx-xxx-xxxx, xxx xxx xxxx)
 
 ```python
-    from nsh import validate
+    from nhs import validate
 
     try:
         if validate('11111'):
